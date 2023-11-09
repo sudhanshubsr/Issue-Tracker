@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/css/project_detail_page.css">
+
+<h2>Issues in Project:  <%= project.project_name %></h2>
+
+<form action="/project/<%= project.id %>/search-issues" method="POST">
+    <!-- <div class="form-group filterbylabel"
+    <label for="Filter By Label">
+        <select name="label" id="label" multiple>
+            <option value="Bug">Bug</option>
+            <option value="Feature Request">Feature Request</option>
+            <option value="Enhancement">Enhancement</option>
+            <option value="Documentation">Documentation</option>
+            <option value="Duplicate">Duplicate</option>
+            <option value="Help Wanted">Help Wanted</option>
+            <option value="Good First Issue">Good First Issue</option>
+            <option value="Invalid">Invalid</option>
+            <option value="Question">Question</option>
+            <option value="Wontfix">Wontfix</option>
+        </select>
+    </label> -->
+<!-- </div> -->
+
+    <div class="form-group filterbyauthor">
+        <div>
+            <label for="fileterbyauthor">Filter By Author:</label>
+            <input type="text" class="form-control col-2" id="author" name="author">
+        </div>
+        <div>
+            <label for="filterbytitle">Filter By Title: </label>
+            <input type="text" class="form-control col-2" id="title" name="title">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+    
+</form>
+
+
+
+
+<% if (issues && issues.length > 0) { %>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Labels</th>
+                <th>Author</th>
+                <th>Created</th>
+                <th>Updated</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% issues.forEach(function(issue) { %>
+                <tr>
+                    <td><%= issue.title %></td>
+                    <td><%= issue.description %></td>
+                    <td><%= issue.labels %></td>
+                    <td><%= issue.author %></td>
+                    <td><%= issue.createdAt.toLocaleString() %></td>
+                    <td><%= issue.updatedAt.toLocaleString() %></td>
+                    <td>
+                        <a href="/project/<%= project.id %>/delete-issue/<%= issue.id %>" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+<% } else { %>
+    <p>No issues found.</p>
+<% } %>
+
+<a href="/project/<%= project.id %>/new-issue" class="btn btn-primary">Create New Issue</a>

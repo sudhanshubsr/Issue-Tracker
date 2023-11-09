@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/sign_in_page.css">
+
+<h2>Sign In</h2>
+
+<div class="signinpage-container">
+
+    <div class="col-10">
+        <form action="/user/create-session" method="Post" >
+            <div class="form-group">
+                <label for="signinEmail"></label>
+                <input type="email" class="form-control" id="signinEmail" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="signinPassword"></label>
+                <input type="password" class="form-control" id="signinPassword" placeholder="Password" name="password">
+            </div>
+            <div class="submitbutton">
+                <div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+                
+                <div>
+                    <span>Don't Have an Account SignUp? &nbsp;</span> <a href="/sign-up">Sign Up</a>
+                </div>
+                   
+            </div>
+            
+        </form>
+    </div>
+    
+</div>
+        

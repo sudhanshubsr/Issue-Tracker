@@ -1,0 +1,36 @@
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    height: 7vh;
+
+}
+
+#username {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.nav div{
+    display: inline-block;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+
+.mainlogo img{
+   height: 50px;
+    margin: 0 auto;
+    display: block;
+    margin-left: 10px;
+
+}

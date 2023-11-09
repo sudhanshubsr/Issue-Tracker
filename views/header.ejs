@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+    <div class="mainlogo"><a href="/"><img src="/images/issuetracker.png" alt=""></a></div>
+    <div class="nav">
+        <% if(locals.user){%>
+            <p id="username"><%= user.username %></p>
+            <div><a href="/user/logout" ><i id="userbutton" class="fa-solid fa-sign-out fa-2x"></i></a></div>
+        <%}else{%>
+
+        <div><a href="/sign-in" ><i id="userbutton" class="fa-solid fa-user fa-2x"></i></a></div> 
+        </div>
+        <% } %>
+</header>

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/create_project_page.css">
+
+<h1>CREATE PROJECT</h1>
+<div class="display-form">
+    <form action="/project/create-project" method="POST" class="create-project-form">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="projectname" name="project_name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" id="projectdescription" name="project_description" rows="3"></textarea>
+      </div>
+    
+      <div class="mb-3">
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" id="projectauthor" name="project_author" value="<%=user.username%>" disabled>
+      </div>
+    
+      <div class="mb-3 submitbutton">
+        <input type="submit" class="btn btn-primary">
+       </div>
+    </form>
+
+</div>
+
+    

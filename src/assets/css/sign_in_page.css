@@ -1,0 +1,39 @@
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.signinpage-container{
+    background-color: whitesmoke;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+form div{
+    margin-bottom: 1rem;
+    display: flex;
+
+
+    align-items: center;
+}
+
+.submitbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

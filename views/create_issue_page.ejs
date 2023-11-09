@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/create_issue_page.css">
+
+<div class="container">
+    <h1>Create Issue</h1>
+    <div class="display-form">
+        <form action="/project/<%= project._id %>/create-issue" method="POST">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="labels">Labels:</label>
+                <select class="form-control" id="labels" name="labels" multiple>
+                    <option value="Bug">Bug</option>
+                    <option value="Feature Request">Feature Request</option>
+                    <option value="Enhancement">Enhancement</option>
+                    <option value="Documentation">Documentation</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Help Wanted">Help Wanted</option>
+                    <option value="Good First Issue">Good First Issue</option>
+                    <option value="Invalid">Invalid</option>
+                    <option value="Question">Question</option>
+                    <option value="Wontfix">Wontfix</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" id="author" name="author" required>
+            </div>
+
+            <div class="submitbutton">
+                <button type="submit" class="btn btn-primary submitbutton">Create Issue</button>
+            </div>
+        </form>
+    </div>
+</div>

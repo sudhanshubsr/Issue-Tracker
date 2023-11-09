@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+
+}
+
+main{
+    /* background-color: lightgray; */
+    height: 85vh;
+    /* border: 1px solid greenyellow; */
+}
+
+.container{
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+
+}   
+
+.ProjectColumn{
+    background-color: white;
+    height: 80vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#ProjectButton{
+    background-color:#0D6EFD;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    height: 3   em;
+    padding-top: 15px;
+
+}
+
+#ProjectButton span{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    font-family: Poppins;
+    padding-bottom: 10px;
+}
+
+
+.projectcreate{
+    position: relative;
+    bottom:10px;
+}
+
+
+.projectile{
+    width: 18rem;
+    margin: 10px;
+}
+
+.ProjectDisplay{
+    background-color: #2e3235;
+    color: white;
+    height: 80vh;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 4%;
+    overflow-y: auto;
+}
+  
+  li {
+    display: inline-block;
+    white-space: nowrap;
+    text-wrap: wrap;
+  }
+  
+ 
