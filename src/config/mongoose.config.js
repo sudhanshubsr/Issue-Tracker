@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://localhost:27017/Issue-Tracker");
+mongoose.connect("mongodb+srv://sudhanshubsrdev:vldmYilLRycsa7b1@cluster0.9qqadao.mongodb.net/");
 
 const db = mongoose.connection;
 
