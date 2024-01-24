@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose.connect(
-  "mongodb+srv://sudhanshubsrdev:8CWBDGJUzl7nuIV4@cluster0.wbtwrdy.mongodb.net/IssueTracker?retryWrites=true&w=majority"
+  "mongodb+srv://sudhanshubsrdev:qbmluRSUaon1jwmE@cluster0.wbtwrdy.mongodb.net/IssueTracker?retryWrites=true&w=majority"
 );
 
 const db = mongoose.connection;
